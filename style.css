@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root{
+    --primary:#000000;
+    --second: #00bde7;
+    --background:#25262a;
+    --background2:#242424;
+    --certi:#333333;
+    --text: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: var(--background);
+}
+
+/* -------------Navbar-------- */
+navbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px ;
+    background: var(--background2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+
+.nav-center a{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: 0.3s ease;
+}
+
+.ganti-nav{
+    float: right;
+    padding: 10px 28px;
+    background-color: var(--text);
+    color: var(--primary);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.ganti-nav:hover{
+    background-color: var(--primary);
+    box-shadow: 0 0 25px var(--primary);
+    color: var(--text);
+}
+.btn-nav{
+    margin-left: -250px;
+    float: right;
+    padding: 10px 28px;
+    background-color: var(--text);
+    color: var(--primary);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-nav:hover{
+    background-color: var(--primary);
+    box-shadow: 0 0 25px var(--primary);
+    color: var(--text);
+}
+#show-nav{
+    display: none;
+}
+
+/* ---------Home------------- */
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.home-content{
+    max-width: 800px;
+}
+
+.home-content h1,h3,p{
+    color: var(--text);
+}
+.home-content h3{
+    font-size: 42px;
+}
+.home-content h1{
+    font-size: 62px;
+    line-height: 1.2;
+}
+.home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+.btn-1{
+    padding: 15px 28px;
+    background-color: var(--primary);
+    color: var(--text);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-1:hover{
+    background-color: var(--text);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+.btn-2{
+    padding: 15px 28px;
+    background-color: var(--second);
+    color: var(--text);
+    border: 2px solid var(--second);
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+
+.btn-2:hover{
+    background-color: var(--text);
+    color: var(--second);
+}
+.img-box img{
+    border-radius: 50%;
+    width: 300px;
+}
+
+/* ------------SKILLS----------------------- */
+
+.skills{
+    width: 100%;
+    height: 100vh;
+}
+
+.skills-0{
+    display: flex;
+}
+
+.skills-0 h1{
+    color: var(--text);
+    margin: 100px auto 0;
+    font-size: 30px;
+}
+
+.skills-top h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin: auto auto auto;
+}
+
+.top-1,.top-2,.top-3{
+    display: flex;
+    float: left;
+    width: 33%;
+    height: 50px;
+    background-color: var(--background);
+    border: 1px solid var(--text);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0 1px 0;
+}
+
+.skills-1, .skills-2, .skills-3{
+    display: flex;
+    float: left;
+    width: 33%;
+    height: 400px;
+    border: 1px solid var(--second);
+    background-color: var(--background);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 0 1px 150px;
+}
+
+.logo1 img{
+    margin: 10px 10px 0;
+    width: 100px;
+}
+
+.logo2 img{
+    margin: 10px 10px 0;
+    height: 100px;
+}
+
+.logo3 img{
+    margin: 10px 10px 0;
+    width: 100px;
+}
+
+/* --------Certification----------------- */
+
+.certi {
+    width: 100%;
+    height: 100vh;
+}
+
+.certi-0 {
+    display: flex;
+    width: 100%;
+}
+
+.certi-0 h1{
+    color: var(--text);
+    font-size: 30px;
+    margin: 10px auto;
+}
+
+.certi-isi{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    background-color: var(--certi);
+    align-items: center;
+}
+
+.certi-1, .certi-2, .certi-3{
+    margin: 0 auto 0;
+    width: 20%;
+    justify-items: center;
+    text-align: center;
+}
+
+.certi-isi img{
+    /* display: block; */
+    height: 200px;
+    margin: 30px auto 0;
+}
+
+
+/* ---------------more-------------- */
+.more{
+    width: 100%;
+    height: 100vh;
+}
+
+.more-0{
+    display: flex;
+}
+
+.more-0 h1{
+    color: var(--text);
+    margin: 100px auto 0;
+    font-size: 30px;
+}
+
+.more-top h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin: auto auto auto;
+}
+
+.more-top{
+    display: flex;
+    justify-content: center;
+}
+
+.mtop-1,.mtop-2,.mtop-3,.mtop-4{
+    display: flex;
+    float: left;
+    width: 24%;
+    height: 50px;
+    background-color: var(--background);
+    border: 1px solid var(--text);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: none;
+    margin: 0 2px 0;
+}
+
+.mtop-1:hover, .mtop-2:hover, .mtop-3:hover, .mtop-4:hover{
+    border-color: var(--second) ;
+    cursor: pointer;
+}
+
+.more-isi{
+    display: flex;
+    width: 97%;
+    height: 400px;
+    border: 1px solid var(--second);
+    background-color: var(--background);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 0 auto 0;
+    padding: 10px 30px 0;
+}
+
+.more-isi li,p{
+    font-size: 20px;
+    color: var(--text);
+    list-style: disc;
+}
+
+.more-active{
+    background-color: var(--second);
+    border-color: var(--second);
+}
+
+#more1{
+    margin: 20px 20px 0;
+    /* display: none; */
+}
+#more2{
+    display: none;
+}
+
+#more3 a{
+    margin: 0 80px 0;
+}
+
+#more3{
+    display: none;
+}
+#more4 li{
+    font-size: 18px;
+}
+#more4{
+    display: none;
+}
